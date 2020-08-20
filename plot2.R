@@ -1,3 +1,4 @@
+#Plot 2
 household <- read.table("household_power_consumption.txt", header = T, sep = ";")
 #We will only be using data from the dates 2007-02-01 and 2007-02-02.
 Data1 <- household[household$Date %in% c("1/2/2007","2/2/2007") ,]
