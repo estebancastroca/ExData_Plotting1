@@ -12,8 +12,8 @@ sub_Metering2 <- as.numeric(Data1$Sub_metering_2)
 sub_Metering3 <- as.numeric(Data1$Sub_metering_3)
 
 png("plot4.png", width=480, height=480)
-par(mfrow = c(2, 2)) 
 
+par(mfrow = c(2, 2)) 
 plot(datetime, global_A_P, type="l", xlab="", ylab="Global Active Power", cex=0.2)
 plot(datetime, vol, type="l", xlab="datetime", ylab="Voltage")
 plot(datetime, sub_Metering1, type="l", ylab="Energy Submetering", xlab="")
